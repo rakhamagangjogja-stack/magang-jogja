@@ -3,580 +3,228 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var _exportNames = {
-  react: true,
-  assertNode: true,
-  createTypeAnnotationBasedOnTypeof: true,
-  createUnionTypeAnnotation: true,
-  createFlowUnionType: true,
-  createTSUnionType: true,
-  cloneNode: true,
-  clone: true,
-  cloneDeep: true,
-  cloneDeepWithoutLoc: true,
-  cloneWithoutLoc: true,
-  addComment: true,
-  addComments: true,
-  inheritInnerComments: true,
-  inheritLeadingComments: true,
-  inheritsComments: true,
-  inheritTrailingComments: true,
-  removeComments: true,
-  ensureBlock: true,
-  toBindingIdentifierName: true,
-  toBlock: true,
-  toComputedKey: true,
-  toExpression: true,
-  toIdentifier: true,
-  toKeyAlias: true,
-  toStatement: true,
-  valueToNode: true,
-  appendToMemberExpression: true,
-  inherits: true,
-  prependToMemberExpression: true,
-  removeProperties: true,
-  removePropertiesDeep: true,
-  removeTypeDuplicates: true,
-  getAssignmentIdentifiers: true,
-  getBindingIdentifiers: true,
-  getOuterBindingIdentifiers: true,
-  getFunctionName: true,
-  traverse: true,
-  traverseFast: true,
-  shallowEqual: true,
-  is: true,
-  isBinding: true,
-  isBlockScoped: true,
-  isImmutable: true,
-  isLet: true,
-  isNode: true,
-  isNodesEquivalent: true,
-  isPlaceholderType: true,
-  isReferenced: true,
-  isScope: true,
-  isSpecifierDefault: true,
-  isType: true,
-  isValidES3Identifier: true,
-  isValidIdentifier: true,
-  isVar: true,
-  matchesPattern: true,
-  validate: true,
-  buildMatchMemberExpression: true,
-  __internal__deprecationWarning: true
-};
-Object.defineProperty(exports, "__internal__deprecationWarning", {
+exports.DEFAULT_EXTENSIONS = void 0;
+Object.defineProperty(exports, "File", {
   enumerable: true,
   get: function () {
-    return _deprecationWarning.default;
+    return _file.default;
   }
 });
-Object.defineProperty(exports, "addComment", {
+Object.defineProperty(exports, "buildExternalHelpers", {
   enumerable: true,
   get: function () {
-    return _addComment.default;
+    return _buildExternalHelpers.default;
   }
 });
-Object.defineProperty(exports, "addComments", {
+Object.defineProperty(exports, "createConfigItem", {
   enumerable: true,
   get: function () {
-    return _addComments.default;
+    return _index2.createConfigItem;
   }
 });
-Object.defineProperty(exports, "appendToMemberExpression", {
+Object.defineProperty(exports, "createConfigItemAsync", {
   enumerable: true,
   get: function () {
-    return _appendToMemberExpression.default;
+    return _index2.createConfigItemAsync;
   }
 });
-Object.defineProperty(exports, "assertNode", {
+Object.defineProperty(exports, "createConfigItemSync", {
   enumerable: true,
   get: function () {
-    return _assertNode.default;
+    return _index2.createConfigItemSync;
   }
 });
-Object.defineProperty(exports, "buildMatchMemberExpression", {
+Object.defineProperty(exports, "getEnv", {
   enumerable: true,
   get: function () {
-    return _buildMatchMemberExpression.default;
+    return _environment.getEnv;
   }
 });
-Object.defineProperty(exports, "clone", {
+Object.defineProperty(exports, "loadOptions", {
   enumerable: true,
   get: function () {
-    return _clone.default;
+    return _index2.loadOptions;
   }
 });
-Object.defineProperty(exports, "cloneDeep", {
+Object.defineProperty(exports, "loadOptionsAsync", {
   enumerable: true,
   get: function () {
-    return _cloneDeep.default;
+    return _index2.loadOptionsAsync;
   }
 });
-Object.defineProperty(exports, "cloneDeepWithoutLoc", {
+Object.defineProperty(exports, "loadOptionsSync", {
   enumerable: true,
   get: function () {
-    return _cloneDeepWithoutLoc.default;
+    return _index2.loadOptionsSync;
   }
 });
-Object.defineProperty(exports, "cloneNode", {
+Object.defineProperty(exports, "loadPartialConfig", {
   enumerable: true,
   get: function () {
-    return _cloneNode.default;
+    return _index2.loadPartialConfig;
   }
 });
-Object.defineProperty(exports, "cloneWithoutLoc", {
+Object.defineProperty(exports, "loadPartialConfigAsync", {
   enumerable: true,
   get: function () {
-    return _cloneWithoutLoc.default;
+    return _index2.loadPartialConfigAsync;
   }
 });
-Object.defineProperty(exports, "createFlowUnionType", {
+Object.defineProperty(exports, "loadPartialConfigSync", {
   enumerable: true,
   get: function () {
-    return _createFlowUnionType.default;
+    return _index2.loadPartialConfigSync;
   }
 });
-Object.defineProperty(exports, "createTSUnionType", {
+Object.defineProperty(exports, "parse", {
   enumerable: true,
   get: function () {
-    return _createTSUnionType.default;
+    return _parse.parse;
   }
 });
-Object.defineProperty(exports, "createTypeAnnotationBasedOnTypeof", {
+Object.defineProperty(exports, "parseAsync", {
   enumerable: true,
   get: function () {
-    return _createTypeAnnotationBasedOnTypeof.default;
+    return _parse.parseAsync;
   }
 });
-Object.defineProperty(exports, "createUnionTypeAnnotation", {
+Object.defineProperty(exports, "parseSync", {
   enumerable: true,
   get: function () {
-    return _createFlowUnionType.default;
+    return _parse.parseSync;
   }
 });
-Object.defineProperty(exports, "ensureBlock", {
+exports.resolvePreset = exports.resolvePlugin = void 0;
+Object.defineProperty((0, exports), "template", {
   enumerable: true,
   get: function () {
-    return _ensureBlock.default;
+    return _template().default;
   }
 });
-Object.defineProperty(exports, "getAssignmentIdentifiers", {
+Object.defineProperty((0, exports), "tokTypes", {
   enumerable: true,
   get: function () {
-    return _getAssignmentIdentifiers.default;
+    return _parser().tokTypes;
   }
 });
-Object.defineProperty(exports, "getBindingIdentifiers", {
+Object.defineProperty(exports, "transform", {
   enumerable: true,
   get: function () {
-    return _getBindingIdentifiers.default;
+    return _transform.transform;
   }
 });
-Object.defineProperty(exports, "getFunctionName", {
+Object.defineProperty(exports, "transformAsync", {
   enumerable: true,
   get: function () {
-    return _getFunctionName.default;
+    return _transform.transformAsync;
   }
 });
-Object.defineProperty(exports, "getOuterBindingIdentifiers", {
+Object.defineProperty(exports, "transformFile", {
   enumerable: true,
   get: function () {
-    return _getOuterBindingIdentifiers.default;
+    return _transformFile.transformFile;
   }
 });
-Object.defineProperty(exports, "inheritInnerComments", {
+Object.defineProperty(exports, "transformFileAsync", {
   enumerable: true,
   get: function () {
-    return _inheritInnerComments.default;
+    return _transformFile.transformFileAsync;
   }
 });
-Object.defineProperty(exports, "inheritLeadingComments", {
+Object.defineProperty(exports, "transformFileSync", {
   enumerable: true,
   get: function () {
-    return _inheritLeadingComments.default;
+    return _transformFile.transformFileSync;
   }
 });
-Object.defineProperty(exports, "inheritTrailingComments", {
+Object.defineProperty(exports, "transformFromAst", {
   enumerable: true,
   get: function () {
-    return _inheritTrailingComments.default;
+    return _transformAst.transformFromAst;
   }
 });
-Object.defineProperty(exports, "inherits", {
+Object.defineProperty(exports, "transformFromAstAsync", {
   enumerable: true,
   get: function () {
-    return _inherits.default;
+    return _transformAst.transformFromAstAsync;
   }
 });
-Object.defineProperty(exports, "inheritsComments", {
+Object.defineProperty(exports, "transformFromAstSync", {
   enumerable: true,
   get: function () {
-    return _inheritsComments.default;
+    return _transformAst.transformFromAstSync;
   }
 });
-Object.defineProperty(exports, "is", {
+Object.defineProperty(exports, "transformSync", {
   enumerable: true,
   get: function () {
-    return _is.default;
+    return _transform.transformSync;
   }
 });
-Object.defineProperty(exports, "isBinding", {
+Object.defineProperty((0, exports), "traverse", {
   enumerable: true,
   get: function () {
-    return _isBinding.default;
+    return _traverse().default;
   }
 });
-Object.defineProperty(exports, "isBlockScoped", {
-  enumerable: true,
-  get: function () {
-    return _isBlockScoped.default;
-  }
-});
-Object.defineProperty(exports, "isImmutable", {
-  enumerable: true,
-  get: function () {
-    return _isImmutable.default;
-  }
-});
-Object.defineProperty(exports, "isLet", {
-  enumerable: true,
-  get: function () {
-    return _isLet.default;
-  }
-});
-Object.defineProperty(exports, "isNode", {
-  enumerable: true,
-  get: function () {
-    return _isNode.default;
-  }
-});
-Object.defineProperty(exports, "isNodesEquivalent", {
-  enumerable: true,
-  get: function () {
-    return _isNodesEquivalent.default;
-  }
-});
-Object.defineProperty(exports, "isPlaceholderType", {
-  enumerable: true,
-  get: function () {
-    return _isPlaceholderType.default;
-  }
-});
-Object.defineProperty(exports, "isReferenced", {
-  enumerable: true,
-  get: function () {
-    return _isReferenced.default;
-  }
-});
-Object.defineProperty(exports, "isScope", {
-  enumerable: true,
-  get: function () {
-    return _isScope.default;
-  }
-});
-Object.defineProperty(exports, "isSpecifierDefault", {
-  enumerable: true,
-  get: function () {
-    return _isSpecifierDefault.default;
-  }
-});
-Object.defineProperty(exports, "isType", {
-  enumerable: true,
-  get: function () {
-    return _isType.default;
-  }
-});
-Object.defineProperty(exports, "isValidES3Identifier", {
-  enumerable: true,
-  get: function () {
-    return _isValidES3Identifier.default;
-  }
-});
-Object.defineProperty(exports, "isValidIdentifier", {
-  enumerable: true,
-  get: function () {
-    return _isValidIdentifier.default;
-  }
-});
-Object.defineProperty(exports, "isVar", {
-  enumerable: true,
-  get: function () {
-    return _isVar.default;
-  }
-});
-Object.defineProperty(exports, "matchesPattern", {
-  enumerable: true,
-  get: function () {
-    return _matchesPattern.default;
-  }
-});
-Object.defineProperty(exports, "prependToMemberExpression", {
-  enumerable: true,
-  get: function () {
-    return _prependToMemberExpression.default;
-  }
-});
-exports.react = void 0;
-Object.defineProperty(exports, "removeComments", {
-  enumerable: true,
-  get: function () {
-    return _removeComments.default;
-  }
-});
-Object.defineProperty(exports, "removeProperties", {
-  enumerable: true,
-  get: function () {
-    return _removeProperties.default;
-  }
-});
-Object.defineProperty(exports, "removePropertiesDeep", {
-  enumerable: true,
-  get: function () {
-    return _removePropertiesDeep.default;
-  }
-});
-Object.defineProperty(exports, "removeTypeDuplicates", {
-  enumerable: true,
-  get: function () {
-    return _removeTypeDuplicates.default;
-  }
-});
-Object.defineProperty(exports, "shallowEqual", {
-  enumerable: true,
-  get: function () {
-    return _shallowEqual.default;
-  }
-});
-Object.defineProperty(exports, "toBindingIdentifierName", {
-  enumerable: true,
-  get: function () {
-    return _toBindingIdentifierName.default;
-  }
-});
-Object.defineProperty(exports, "toBlock", {
-  enumerable: true,
-  get: function () {
-    return _toBlock.default;
-  }
-});
-Object.defineProperty(exports, "toComputedKey", {
-  enumerable: true,
-  get: function () {
-    return _toComputedKey.default;
-  }
-});
-Object.defineProperty(exports, "toExpression", {
-  enumerable: true,
-  get: function () {
-    return _toExpression.default;
-  }
-});
-Object.defineProperty(exports, "toIdentifier", {
-  enumerable: true,
-  get: function () {
-    return _toIdentifier.default;
-  }
-});
-Object.defineProperty(exports, "toKeyAlias", {
-  enumerable: true,
-  get: function () {
-    return _toKeyAlias.default;
-  }
-});
-Object.defineProperty(exports, "toStatement", {
-  enumerable: true,
-  get: function () {
-    return _toStatement.default;
-  }
-});
-Object.defineProperty(exports, "traverse", {
-  enumerable: true,
-  get: function () {
-    return _traverse.default;
-  }
-});
-Object.defineProperty(exports, "traverseFast", {
-  enumerable: true,
-  get: function () {
-    return _traverseFast.default;
-  }
-});
-Object.defineProperty(exports, "validate", {
-  enumerable: true,
-  get: function () {
-    return _validate.default;
-  }
-});
-Object.defineProperty(exports, "valueToNode", {
-  enumerable: true,
-  get: function () {
-    return _valueToNode.default;
-  }
-});
-var _isReactComponent = require("./validators/react/isReactComponent.js");
-var _isCompatTag = require("./validators/react/isCompatTag.js");
-var _buildChildren = require("./builders/react/buildChildren.js");
-var _assertNode = require("./asserts/assertNode.js");
-var _index = require("./asserts/generated/index.js");
-Object.keys(_index).forEach(function (key) {
-  if (key === "default" || key === "__esModule") return;
-  if (Object.prototype.hasOwnProperty.call(_exportNames, key)) return;
-  if (key in exports && exports[key] === _index[key]) return;
-  Object.defineProperty(exports, key, {
-    enumerable: true,
-    get: function () {
-      return _index[key];
-    }
-  });
-});
-var _createTypeAnnotationBasedOnTypeof = require("./builders/flow/createTypeAnnotationBasedOnTypeof.js");
-var _createFlowUnionType = require("./builders/flow/createFlowUnionType.js");
-var _createTSUnionType = require("./builders/typescript/createTSUnionType.js");
-var _productions = require("./builders/productions.js");
-Object.keys(_productions).forEach(function (key) {
-  if (key === "default" || key === "__esModule") return;
-  if (Object.prototype.hasOwnProperty.call(_exportNames, key)) return;
-  if (key in exports && exports[key] === _productions[key]) return;
-  Object.defineProperty(exports, key, {
-    enumerable: true,
-    get: function () {
-      return _productions[key];
-    }
-  });
-});
-var _index2 = require("./builders/generated/index.js");
-Object.keys(_index2).forEach(function (key) {
-  if (key === "default" || key === "__esModule") return;
-  if (Object.prototype.hasOwnProperty.call(_exportNames, key)) return;
-  if (key in exports && exports[key] === _index2[key]) return;
-  Object.defineProperty(exports, key, {
-    enumerable: true,
-    get: function () {
-      return _index2[key];
-    }
-  });
-});
-var _cloneNode = require("./clone/cloneNode.js");
-var _clone = require("./clone/clone.js");
-var _cloneDeep = require("./clone/cloneDeep.js");
-var _cloneDeepWithoutLoc = require("./clone/cloneDeepWithoutLoc.js");
-var _cloneWithoutLoc = require("./clone/cloneWithoutLoc.js");
-var _addComment = require("./comments/addComment.js");
-var _addComments = require("./comments/addComments.js");
-var _inheritInnerComments = require("./comments/inheritInnerComments.js");
-var _inheritLeadingComments = require("./comments/inheritLeadingComments.js");
-var _inheritsComments = require("./comments/inheritsComments.js");
-var _inheritTrailingComments = require("./comments/inheritTrailingComments.js");
-var _removeComments = require("./comments/removeComments.js");
-var _index3 = require("./constants/generated/index.js");
-Object.keys(_index3).forEach(function (key) {
-  if (key === "default" || key === "__esModule") return;
-  if (Object.prototype.hasOwnProperty.call(_exportNames, key)) return;
-  if (key in exports && exports[key] === _index3[key]) return;
-  Object.defineProperty(exports, key, {
-    enumerable: true,
-    get: function () {
-      return _index3[key];
-    }
-  });
-});
-var _index4 = require("./constants/index.js");
-Object.keys(_index4).forEach(function (key) {
-  if (key === "default" || key === "__esModule") return;
-  if (Object.prototype.hasOwnProperty.call(_exportNames, key)) return;
-  if (key in exports && exports[key] === _index4[key]) return;
-  Object.defineProperty(exports, key, {
-    enumerable: true,
-    get: function () {
-      return _index4[key];
-    }
-  });
-});
-var _ensureBlock = require("./converters/ensureBlock.js");
-var _toBindingIdentifierName = require("./converters/toBindingIdentifierName.js");
-var _toBlock = require("./converters/toBlock.js");
-var _toComputedKey = require("./converters/toComputedKey.js");
-var _toExpression = require("./converters/toExpression.js");
-var _toIdentifier = require("./converters/toIdentifier.js");
-var _toKeyAlias = require("./converters/toKeyAlias.js");
-var _toStatement = require("./converters/toStatement.js");
-var _valueToNode = require("./converters/valueToNode.js");
-var _index5 = require("./definitions/index.js");
-Object.keys(_index5).forEach(function (key) {
-  if (key === "default" || key === "__esModule") return;
-  if (Object.prototype.hasOwnProperty.call(_exportNames, key)) return;
-  if (key in exports && exports[key] === _index5[key]) return;
-  Object.defineProperty(exports, key, {
-    enumerable: true,
-    get: function () {
-      return _index5[key];
-    }
-  });
-});
-var _appendToMemberExpression = require("./modifications/appendToMemberExpression.js");
-var _inherits = require("./modifications/inherits.js");
-var _prependToMemberExpression = require("./modifications/prependToMemberExpression.js");
-var _removeProperties = require("./modifications/removeProperties.js");
-var _removePropertiesDeep = require("./modifications/removePropertiesDeep.js");
-var _removeTypeDuplicates = require("./modifications/flow/removeTypeDuplicates.js");
-var _getAssignmentIdentifiers = require("./retrievers/getAssignmentIdentifiers.js");
-var _getBindingIdentifiers = require("./retrievers/getBindingIdentifiers.js");
-var _getOuterBindingIdentifiers = require("./retrievers/getOuterBindingIdentifiers.js");
-var _getFunctionName = require("./retrievers/getFunctionName.js");
-var _traverse = require("./traverse/traverse.js");
-Object.keys(_traverse).forEach(function (key) {
-  if (key === "default" || key === "__esModule") return;
-  if (Object.prototype.hasOwnProperty.call(_exportNames, key)) return;
-  if (key in exports && exports[key] === _traverse[key]) return;
-  Object.defineProperty(exports, key, {
-    enumerable: true,
-    get: function () {
-      return _traverse[key];
-    }
-  });
-});
-var _traverseFast = require("./traverse/traverseFast.js");
-var _shallowEqual = require("./utils/shallowEqual.js");
-var _is = require("./validators/is.js");
-var _isBinding = require("./validators/isBinding.js");
-var _isBlockScoped = require("./validators/isBlockScoped.js");
-var _isImmutable = require("./validators/isImmutable.js");
-var _isLet = require("./validators/isLet.js");
-var _isNode = require("./validators/isNode.js");
-var _isNodesEquivalent = require("./validators/isNodesEquivalent.js");
-var _isPlaceholderType = require("./validators/isPlaceholderType.js");
-var _isReferenced = require("./validators/isReferenced.js");
-var _isScope = require("./validators/isScope.js");
-var _isSpecifierDefault = require("./validators/isSpecifierDefault.js");
-var _isType = require("./validators/isType.js");
-var _isValidES3Identifier = require("./validators/isValidES3Identifier.js");
-var _isValidIdentifier = require("./validators/isValidIdentifier.js");
-var _isVar = require("./validators/isVar.js");
-var _matchesPattern = require("./validators/matchesPattern.js");
-var _validate = require("./validators/validate.js");
-var _buildMatchMemberExpression = require("./validators/buildMatchMemberExpression.js");
-var _index6 = require("./validators/generated/index.js");
-Object.keys(_index6).forEach(function (key) {
-  if (key === "default" || key === "__esModule") return;
-  if (Object.prototype.hasOwnProperty.call(_exportNames, key)) return;
-  if (key in exports && exports[key] === _index6[key]) return;
-  Object.defineProperty(exports, key, {
-    enumerable: true,
-    get: function () {
-      return _index6[key];
-    }
-  });
-});
-var _deprecationWarning = require("./utils/deprecationWarning.js");
-var _toSequenceExpression = require("./converters/toSequenceExpression.js");
-const react = exports.react = {
-  isReactComponent: _isReactComponent.default,
-  isCompatTag: _isCompatTag.default,
-  buildChildren: _buildChildren.default
-};
-exports.toSequenceExpression = _toSequenceExpression.default;
-if (process.env.BABEL_TYPES_8_BREAKING) {
-  console.warn("BABEL_TYPES_8_BREAKING is not supported anymore. Use the latest Babel 8.0.0 pre-release instead!");
+exports.version = exports.types = void 0;
+var _file = require("./transformation/file/file.js");
+var _buildExternalHelpers = require("./tools/build-external-helpers.js");
+var resolvers = require("./config/files/index.js");
+var _environment = require("./config/helpers/environment.js");
+function _types() {
+  const data = require("@babel/types");
+  _types = function () {
+    return data;
+  };
+  return data;
 }
+Object.defineProperty((0, exports), "types", {
+  enumerable: true,
+  get: function () {
+    return _types();
+  }
+});
+function _parser() {
+  const data = require("@babel/parser");
+  _parser = function () {
+    return data;
+  };
+  return data;
+}
+function _traverse() {
+  const data = require("@babel/traverse");
+  _traverse = function () {
+    return data;
+  };
+  return data;
+}
+function _template() {
+  const data = require("@babel/template");
+  _template = function () {
+    return data;
+  };
+  return data;
+}
+var _index2 = require("./config/index.js");
+var _transform = require("./transform.js");
+var _transformFile = require("./transform-file.js");
+var _transformAst = require("./transform-ast.js");
+var _parse = require("./parse.js");
+const version = exports.version = "7.29.0";
+const resolvePlugin = (name, dirname) => resolvers.resolvePlugin(name, dirname, false).filepath;
+exports.resolvePlugin = resolvePlugin;
+const resolvePreset = (name, dirname) => resolvers.resolvePreset(name, dirname, false).filepath;
+exports.resolvePreset = resolvePreset;
+const DEFAULT_EXTENSIONS = exports.DEFAULT_EXTENSIONS = Object.freeze([".js", ".jsx", ".es6", ".es", ".mjs", ".cjs"]);
+exports.OptionManager = class OptionManager {
+  init(opts) {
+    return (0, _index2.loadOptionsSync)(opts);
+  }
+};
+exports.Plugin = function Plugin(alias) {
+  throw new Error(`The (${alias}) Babel 5 plugin is being run with an unsupported Babel version.`);
+};
+0 && (exports.types = exports.traverse = exports.tokTypes = exports.template = 0);
 
 //# sourceMappingURL=index.js.map
